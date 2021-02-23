@@ -8,7 +8,7 @@
   "license": "ISC",
   "scripts": {
     "dev": "vite src",
-    "build": "vite build --emptyOutDir",
+    "build": "vite build",
     "serve": "vite preview"
   },
   "dependencies": {},

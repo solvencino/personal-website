@@ -63,6 +63,7 @@ window.onload = function () {
 
   if (localStorage.getItem('dark') === '1') {
     html.classList.add('dark')
+    s.innerText = '🌙'
   }
 
   s.onclick = () => {

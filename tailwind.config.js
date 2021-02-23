@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['./src/**/*.html'],
+  purge: ['./src/**/*.html', './src/**/*.js', './src/**/*.css'],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
@@ -14,6 +14,7 @@ module.exports = {
       },
       margin: {
         70: '17.58rem',
+        mobile: '41rem',
       },
       keyframes: {
         'bounce-fast': {
