@@ -61,20 +61,20 @@ window.onload = function () {
   const s = document.getElementById('switch')
   const html = document.getElementById('html')
 
-  if (localStorage.getItem('dark') === '1') {
-    html.classList.add('dark')
-    s.innerText = '🌙'
+  if (localStorage.getItem('white') === '1') {
+    html.classList.remove('dark')
+    s.innerText = '☀️'
   }
 
   s.onclick = () => {
     if (html.classList.contains('dark')) {
       html.classList.remove('dark')
       s.innerText = '☀️'
-      localStorage.removeItem('dark', 1)
+      localStorage.setItem('white', 1)
     } else {
       html.classList.add('dark')
       s.innerText = '🌙'
-      localStorage.setItem('dark', 1)
+      localStorage.removeItem('white', 1)
     }
   }
 }

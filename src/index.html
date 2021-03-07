@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html id="html">
+<html id="html" class="dark" style="scroll-behavior: smooth">
   <head>
     <title>Solvencino</title>
     <meta charset="utf-8" />
     <meta name="google-site-verification" content="9qT9HLPo7pes4anEKYVZ-WoZi1jo8Yvhl6agBKjG-g8" />
+    <link rel="shortcut icon" type="image/jpg" href="/favicon.png" />
   </head>
   <body class="dark:bg-dark">
     <div class="relative h-screen mx-auto lg:container">
@@ -15,7 +16,7 @@
         <p class="text-5xl font-medium tracking-wider text-red-400 lg:text-xl">
           Amansinh <span class="text-blue-400">Parmar</span>
         </p>
-        <div class="hidden space-x-7 lg:block">
+        <!-- <div class="hidden space-x-7 lg:block">
           <div class="inline-block transition transform hover:scale-110">
             <a href="#home" class="p-2">🏠 Home</a>
           </div>
@@ -25,9 +26,9 @@
           <div class="inline-block transition transform hover:scale-110">
             <a href="#contact" class="p-2">☎️ Contact</a>
           </div>
-        </div>
+        </div> -->
         <div>
-          <a href="#" id="switch" class="text-4xl lg:text-base">☀️</a>
+          <a href="#" id="switch" class="text-4xl lg:text-base">🌙</a>
         </div>
       </div>
 
@@ -39,7 +40,7 @@
               <div class="hidden w-8 h-8 rounded-full lg:w-3 lg:h-3 lg:ml-70 lg:block animate-bounce-fast bg-lightblue"></div>
               SolvencIno
             </h1>
-            <h1 class="mt-4 text-6xl font-light lg:text-4xl">
+            <h1 class="mt-4 text-6xl font-light text-center lg:text-left lg:text-4xl">
               I'm
               <span
                 style="font-family: 'Caveat', cursive"
@@ -61,15 +62,15 @@
           >
             <polygon points="50,0 100,0 50,100 0,100"></polygon>
           </svg>
-          <img class="mx-auto" src="/computer.svg" />
+          <img class="hidden mx-auto lg:block" src="/computer.svg" />
         </div>
       </div>
 
       <!-- about -->
 
-      <div id="about" class="flex">
-        <div class="relative hidden w-1/2 bg-lightblue lg:block">
-          <img class="absolute z-10 mx-auto transform rotate-45" src="/gaming-mouse.svg" />
+      <div id="about" class="flex flex-col lg:flex-row">
+        <div class="lg:w-1/2 bg-lightblue zigzag">
+          <img src="profile.jpeg" class="mx-auto my-20 border-4 border-white rounded-3xl w-60 h-w-60" />
         </div>
         <div class="z-10 text-center text-black lg:w-1/2 dark:text-white">
           <p class="pt-16 text-6xl font-semibold text-red-400 lg:pt-8 lg:text-4xl">About</p>
@@ -78,10 +79,7 @@
           <div class="pt-16 text-3xl tracking-wider text-left lg:pt-4 lg:text-lg pl-11">
             <p>
               Hello, I'm Amansinh Parmar. I'm From India.
-              <img
-                class="image"
-                src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/twitter/259/flag-india_1f1ee-1f1f3.png"
-              />
+              <img class="image" src="/india.png" />
             </p>
             <br />
             <p>I love building websties ❤️ and tinkering with computers. 🖥️</p>
@@ -90,27 +88,16 @@
             <p>
               My favourite flavors of technologies are <br />
 
-              <img
-                class="image"
-                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K"
-                alt=""
-              />
+              <img class="image" src="/react.svg" alt="" />
               React
               <br />
-              <img
-                class="image"
-                alt="Image result for typescript"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png"
-              />
+              <img class="image" alt="Image result for typescript" src="/typescript.png" />
               Typescript<br />
-              <img
-                alt="Image result for tailwind"
-                class="image"
-                src="https://pbs.twimg.com/profile_images/1278691829135876097/I4HKOLJw_400x400.png"
-              />
+              <img alt="Image result for tailwind" class="image" src="/tailwind.png" />
               Tailwind<br />
-              <img alt="Image result for next js" class="image" src="https://cdn.worldvectorlogo.com/logos/next-js.svg" />
-              Next.js and counting...
+              <img alt="Image result for next js" class="image" src="/nextjs.svg" />
+              Next.js<br />
+              & counting...
               <br />
             </p>
             <br />
@@ -120,29 +107,50 @@
         </div>
       </div>
 
-      <div class="w-full mt-12 border-t-2"></div>
+      <div class="w-full border-t-2"></div>
 
-      <div class="relative z-10 w-full mt-20 text-center" id="contact">
-        <div class="space-y-8 dark:text-white">
-          <p class="text-6xl font-semibold text-red-400 lg:text-4xl">Contact</p>
+      <div class="flex flex-col w-full mt-10 text-center lg:flex-row" id="contact">
+        <div class="mb-10 space-y-8 lg:w-1/2 dark:text-white">
+          <p class="mt-10 text-6xl font-semibold text-red-400 lg:text-4xl">Contact</p>
           <div class="flex justify-center mt-20 space-x-8 text-4xl lg:text-xl lg:mt-0">
-            <p class="underline cursor-pointer">
-              <a href="mailto:harshparamar84@gmail.com"> Mail </a>
+            <div class="transition transform hover:scale-110">
+              <a href="mailto:harshparamar84@gmail.com">
+                <img src="https://img.icons8.com/doodle/48/000000/apple-mail.png" class="inline w-10 h-10 image" />
+                Mail
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="mt-5 border-l"></div>
+        <div class="mb-10 space-y-8 lg:w-1/2 dark:text-white">
+          <p class="mt-10 text-6xl font-semibold text-red-400 lg:text-4xl">Stalk Me!</p>
+          <div class="flex justify-center mt-20 space-x-16 text-4xl lg:text-xl lg:mt-0">
+            <div class="transition transform hover:scale-110">
+              <a href="https://github.com/solvencino">
+                <img src="https://img.icons8.com/fluent/48/000000/github.png" class="inline w-10 h-10 image" />
+                Github
+              </a>
+            </div>
+            <p class="transition transform hover:scale-110">
+              <a href="https://www.linkedin.com/in/amansinh-parmar-3a174419a/">
+                <img src="https://img.icons8.com/fluent/48/000000/linkedin.png" class="inline w-10 h-10 image" />
+                Linkedin
+              </a>
             </p>
-            <p class="underline">
-              <a href="https://github.com/solvencino"> Github </a>
-            </p>
-            <p class="underline">
-              <a href="https://www.linkedin.com/in/amansinh-parmar-3a174419a/"> Linkedin </a>
-            </p>
-            <p class="underline">
-              <a href="https://stackoverflow.com/users/12173339/solvenc1no"> Stack Overflow </a>
+            <p class="transition transform hover:scale-110">
+              <a href="https://stackoverflow.com/users/12173339/solvenc1no">
+                <img src="/stackoverflow.png" class="inline w-10 h-10 image" />
+                Stack Overflow
+              </a>
             </p>
           </div>
-          <p class="pb-20 text-4xl font-medium lg:pb-0 lg:text-lg">
-            I'm currently looking for part-time job or internship, Thank You for being here 😊
-          </p>
         </div>
+      </div>
+      <div class="mx-20 mt-10 border-t-2">
+        <p class="pb-20 mt-10 text-4xl tracking-wide text-center text-black lg:font-semibold dark:text-white lg:pb-0 lg:text-lg">
+          I'm currently looking for part-time job or internship, Thank You for being here 😊
+        </p>
+        <br />
       </div>
     </div>
     <script src="./index.js" type="module"></script>
